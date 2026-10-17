@@ -1,0 +1,197 @@
+/* ===== Универсальный селектор ===== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ===== Базовые стили страницы ===== */
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #2c2c2c;
+	background-color: #fdfaf7;
+	line-height: 1.6;
+}
+
+/* ===== Шапка ===== */
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #ffffff;
+	padding: 24px 60px;
+	margin-bottom: 40px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.header__title {
+	font-size: 30px;
+	font-weight: 700;
+	color: #d35400;
+	letter-spacing: 1px;
+}
+
+/* ===== Навигация ===== */
+.nav {
+	padding: 8px 0;
+}
+
+.nav__link {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	color: #333333;
+	text-decoration: none;
+	margin-left: 28px;
+	transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+	color: #d35400;
+}
+
+/* ===== Основной контент ===== */
+.main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 60px 60px;
+}
+
+/* ===== Секции ===== */
+.section {
+	margin-bottom: 60px;
+	padding: 40px;
+	background-color: #ffffff;
+	border-radius: 16px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.section__title {
+	font-size: 26px;
+	font-weight: 700;
+	color: #2c2c2c;
+	margin-bottom: 24px;
+	padding-bottom: 12px;
+	border-bottom: 3px solid #f39c12;
+	display: inline-block;
+}
+
+.section__img {
+	width: 100%;
+	max-width: 600px;
+	height: 380px;
+	object-fit: cover;
+	border-radius: 12px;
+	display: block;
+	margin-bottom: 24px;
+}
+
+.section__text {
+	font-size: 16px;
+	font-weight: 400;
+	color: #555555;
+	line-height: 1.8;
+}
+
+/* ===== Преимущества ===== */
+.advantages__list {
+	list-style: none;
+	padding: 0;
+}
+
+.advantages__item {
+	font-size: 16px;
+	font-weight: 400;
+	color: #444444;
+	padding: 14px 0 14px 44px;
+	margin-bottom: 8px;
+	position: relative;
+	border-bottom: 1px dashed #eeeeee;
+}
+
+.advantages__item::before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	top: 14px;
+	width: 28px;
+	height: 28px;
+	background-color: #f39c12;
+	color: #ffffff;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 28px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+/* ===== Таблица блюд ===== */
+.dishes__table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 8px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+}
+
+.dishes__table th,
+.dishes__table td {
+	padding: 14px 18px;
+	border: 1px solid #e0e0e0;
+	text-align: left;
+}
+
+.dishes__table th {
+	background-color: #d35400;
+	color: #ffffff;
+	font-weight: 600;
+	text-align: center;
+}
+
+.dishes__table td {
+	color: #444444;
+	font-weight: 400;
+}
+
+.dishes__table tbody tr:nth-child(even) {
+	background-color: #fdf3e8;
+}
+
+.dishes__table tbody tr:hover {
+	background-color: #fbe3cc;
+}
+
+/* ===== Футер ===== */
+.footer {
+	background-color: black;
+	color: white;
+	padding: 40px 60px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.footer__text {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.footer__link {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	color: #f39c12;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.footer__link:hover {
+	color: #ffffff;
+}
